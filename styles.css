@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px auto;
+    max-width: 85%;
+    width: 100%;
+}
+:root{
+    --primary-color:#7c3aed;
+    --secondary-color:whitesmoke;
+    --dark-color: #747373;
+}
+
+/* Navigation bar */
+.list-non-bullet{
+    list-style-type: none;
+}
+.list-item-inline{
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+.navigation{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+.navigation .link{
+    color: var(--secondary-color);
+}
+.navigation .nav-pills{
+    text-align: right;
+}
+.navigation .nav-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navigation .link-active{
+    font-weight: bold;
+}
+
+/* header */
+.hero{
+    padding: 2rem;
+}
+.hero .hero-img{
+    padding-top: 3rem;
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+.hero .hero-heading{
+    color: var(--dark-color);
+    padding-top: 1rem;
+    text-align: center;
+}
+.hero .hero-heading .heading-inverted{
+    color: var(--primary-color);
+}
+
+/* sections */
+.section{
+    padding: 2rem 0rem;   
+}
+.section h1{
+    text-align: center;
+}
+.section .container .link-section{
+    width: 100px;
+    display: block;
+    margin: auto;
+}
+.section .link-projects{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 1.2rem;
+}
+.section .link-blogs{
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 1.2rem;
+}
+.container{
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+.container-offwhite{
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+/* footer */
+.footer{
+    padding-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    border-top-right-radius: 1rem ;
+    min-height: 120px;
+}
+.footer .link{
+    color: var(--secondary-color);
+}
+.footer .social-links{
+    padding-inline-start: 0px;
+}
+
+.comingsoon-container{
+    display: flex;
+    height: 90vh;
+}
+.coming-soon{
+    font-size: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 50px #7798ae;
+    margin: auto;
+    padding: 50px;
+}
+.recordings-container h2{
+    display: flex;
+}
+.recordings-container a{
+    text-decoration: none;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 18px;
+}
+.React-links{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+@media (max-width: 900px) {
+    body {
+      max-width: 95%;
+      width: 100%;
+    }
+    .list-item-inline {
+      display: inline;
+      padding: 0rem;
+    }
+
+    .section .project-section .list-item-inline{
+        display: block;
+        margin: 2rem auto;
+    }
+    .section .project-section .list-non-bullet{
+        padding-inline-start: 0px;
+    }
+
+    .hero .hero-img{
+        width: 250px;
+    }
+  }
+
+
+/* projects */
+.live-project{
+    margin: 0rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 1.2rem;
+}
+.view-source{
+    border: 1px solid var(--primary-color);
+    border-radius: 1.2rem;
+    color: var(--primary-color);
+}
+.section .project-section{
+    margin: 2rem 0rem;
+}
+.section .container-offwhite small{
+    display: block;
+    margin-top: -1rem;
+}
